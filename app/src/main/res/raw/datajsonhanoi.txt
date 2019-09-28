@@ -1,0 +1,907 @@
+{
+   "html_attributions" : [],
+   "next_page_token" : "CqQCHwEAAEjsLbbogny5kZ1bRWTci77sW6YsAGvLoGO6xpRACJoSU9o7fWUSZQTiBnmJXOA53dezXSo6cePKfXT4urDLGoEQUSRIUKbrDySoUoQ-Q8sYKkWvPieox4S9wDpWo-kuzZWtAiYceyTqdaqdZ1qarXUCXKGpVUqRBpOhpGPD11y6JXsSkGau87VBgrMtdLRy6jcGccD8EpPHrw5hmX-enuw_T30VRSo4jsCRh4f_OHoytDFUbudpaXlKP4GnPAzGDQIMm7iwXQZDW4JdetHDwpTWMYVV1h9sdIVMfb31FmJqv3uSxjr5K0kHwG4Jptab9slCefdBa3KmqE06Kx4egPuROW5M3HeJX7TnGX-nnPK_4OPxk-0E459k5hRehphpIBIQUNOn6JwZXIZLCut92lycChoUjMW1lXXNQQ25UmGkTtQSL7g45x8",
+   "results" : [
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 21.0183344,
+               "lng" : 105.8614591
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 21.0198129802915,
+                  "lng" : 105.8622220802915
+               },
+               "southwest" : {
+                  "lat" : 21.0171150197085,
+                  "lng" : 105.8595241197085
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/doctor-71.png",
+         "id" : "ddcbd0003e61a3e18c7a74512f75cb7a5365ff9e",
+         "name" : "Bệnh Viện Trung Ương Quân Đội 108",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "photos" : [
+            {
+               "height" : 4160,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/115330780622711126168/photos\"\u003eTien Hai Cao\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAAJqBFc_fIZVfep-5JUhhDs9VSa71ITqfwBATXnhERQcznsY4h7XVi1qQE_j_CZCjYfF6n2OJnecrcMei20JJDjVg5YpuFGp91NvqWAKFHQEqkTaLWrEbFH858XHiNGmdvEhBVVaBN5tHk2P5BDNfTCDqvGhR3AYTOpORb-ApCFjIbW1jvu3UABw",
+               "width" : 3120
+            }
+         ],
+         "place_id" : "ChIJb76rLO6rNTERNsWdbdIYfag",
+         "plus_code" : {
+            "compound_code" : "2V96+8H Bạch Đằng, Hai Bà Trưng, Hà Nội, Việt Nam",
+            "global_code" : "7PH72V96+8H"
+         },
+         "rating" : 4.3,
+         "reference" : "ChIJb76rLO6rNTERNsWdbdIYfag",
+         "scope" : "GOOGLE",
+         "types" : [ "hospital", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 943,
+         "vicinity" : "Số 1 Trần Hưng Đạo, Bạch Đằng"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 21.0282808,
+               "lng" : 105.8473475
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 21.0311053,
+                  "lng" : 105.8486277302915
+               },
+               "southwest" : {
+                  "lat" : 21.0260669,
+                  "lng" : 105.8459297697085
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/doctor-71.png",
+         "id" : "2b6956d52461fc99b0f8554625fa21fb9866b3f4",
+         "name" : "Bệnh Viện Việt Đức",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 534,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/106789577729233653860/photos\"\u003eThái Trần\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAAUsNAkj7eN_Z6aEdmeG2jNCYz07gJyUOoFMgef58DjQWzBejLiyJtGeFTM6DKIVjCEMqvEmtWhoCKsGdRHoR3ywSddw7ehiQ4jsiT6tp9xzwnwfU_MbEQJCQ8292uW7AgEhDUoUqTHDfaCQjjCP9Dd4kMGhTKsXJpTqTKEDHfsGY6T63gwxKaLA",
+               "width" : 800
+            }
+         ],
+         "place_id" : "ChIJHaTEL5SrNTERkvPJ-R2zYOE",
+         "plus_code" : {
+            "compound_code" : "2RHW+8W Hàng Bông, Hoàn Kiếm, Hà Nội, Việt Nam",
+            "global_code" : "7PH72RHW+8W"
+         },
+         "rating" : 4.2,
+         "reference" : "ChIJHaTEL5SrNTERkvPJ-R2zYOE",
+         "scope" : "GOOGLE",
+         "types" : [ "hospital", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 634,
+         "vicinity" : "40 Tràng Thi, Hàng Bông"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 21.0270979,
+               "lng" : 105.8468212
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 21.0281886802915,
+                  "lng" : 105.8484785
+               },
+               "southwest" : {
+                  "lat" : 21.0254907197085,
+                  "lng" : 105.8447617
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/doctor-71.png",
+         "id" : "bcd33c4ab944e11575b8fe975691a3f19cad5b53",
+         "name" : "Bệnh viện Phụ sản Trung ương",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 1800,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/100937135495270322159/photos\"\u003eAnh Tuấn Nguyễn\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAAXp8G-ZRvNJOLmHat5b9GRVJLyvsHYMc1PD3nG0BbjP4j8Kf3eyPLGNuWavff8EpOs2qZ_toK8a5n0l-C7GD6x4b-j9gTE2qbsCal7bpcZB_WU868100fqHlMwAJxujMfEhBYz9r4ZmCCzpTxrnHBqtc6GhQzkiVTYuc2cOvLUbqZxVG8rtmLXA",
+               "width" : 1350
+            }
+         ],
+         "place_id" : "ChIJYTq31pWrNTEROXmJnU9OyeQ",
+         "plus_code" : {
+            "compound_code" : "2RGW+RP Hà Nội, Hoàn Kiếm, Hà Nội, Việt Nam",
+            "global_code" : "7PH72RGW+RP"
+         },
+         "rating" : 3.6,
+         "reference" : "ChIJYTq31pWrNTEROXmJnU9OyeQ",
+         "scope" : "GOOGLE",
+         "types" : [ "hospital", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 511,
+         "vicinity" : "43 Tràng Thi, Hàng Bông"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 21.0176054,
+               "lng" : 105.8493449
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 21.0188863802915,
+                  "lng" : 105.8506434302915
+               },
+               "southwest" : {
+                  "lat" : 21.0161884197085,
+                  "lng" : 105.8479454697085
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/doctor-71.png",
+         "id" : "90e8aafdb8b69bf770fbb118653daae95af5185f",
+         "name" : "Bệnh viện Mắt Trung Ương",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "photos" : [
+            {
+               "height" : 4160,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/116432460579881702567/photos\"\u003eLe Dong PHUONG\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAAJQOOfFlKagMoeIGIziXPCRcf_45TkXZfiKYTJtO4SWmeHCZEZYu34ewWcBADOxwxedrncgx2ckO4zcr_Q5BJ-vOAZf6D6HHfH4GzX0Iobif-g3hedkc_78t00-HojPTiEhBF9Og9KJ1VYNHICcPHebLMGhS-j1H1-mFlOwsd6QeCyKpLGIG_jg",
+               "width" : 3120
+            }
+         ],
+         "place_id" : "ChIJQZN-oI2rNTERgoIPjdzzADk",
+         "plus_code" : {
+            "compound_code" : "2R9X+2P Hà Nội, Hoàn Kiếm, Hà Nội, Việt Nam",
+            "global_code" : "7PH72R9X+2P"
+         },
+         "rating" : 3.9,
+         "reference" : "ChIJQZN-oI2rNTERgoIPjdzzADk",
+         "scope" : "GOOGLE",
+         "types" : [ "hospital", "health", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 504,
+         "vicinity" : "85 Bà Triệu, Bùi Thị Xuân"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 21.0164187,
+               "lng" : 105.7811727
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 21.0178665802915,
+                  "lng" : 105.7824480302915
+               },
+               "southwest" : {
+                  "lat" : 21.0151686197085,
+                  "lng" : 105.7797500697085
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "a694a0970492d752b5eb160ec07c0d7117b56253",
+         "name" : "Phòng Khám Đa Khoa Mễ Trì",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "photos" : [
+            {
+               "height" : 2448,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/102247123480222040157/photos\"\u003ebao khanh\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAAdlL8wgKXaIehjM2mqYNcuW8Pi8bHQrutGuP7bvVzDU5rqjhN3FIxE7aySADzt7t1jVCm9h21eSpcAtDx7j2fAl5gs4VqoDne3P84hqUvTEhNaHbip-iqC_ru3cWTzn5mEhDJIvIkuXqgcZyvpQodayMKGhRfBBFz_lYkI74iOk9LQTNF8H-iRQ",
+               "width" : 3264
+            }
+         ],
+         "place_id" : "ChIJB0cA3KpUNDERicdDU53UgR4",
+         "plus_code" : {
+            "compound_code" : "2Q8J+HF Mễ Trì, Hà Nội, Việt Nam",
+            "global_code" : "7PH72Q8J+HF"
+         },
+         "rating" : 3,
+         "reference" : "ChIJB0cA3KpUNDERicdDU53UgR4",
+         "scope" : "GOOGLE",
+         "types" : [ "health", "hospital", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 12,
+         "vicinity" : "CT1"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 21.02688749999999,
+               "lng" : 105.8460836
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 21.0283161802915,
+                  "lng" : 105.8472272802915
+               },
+               "southwest" : {
+                  "lat" : 21.0256182197085,
+                  "lng" : 105.8445293197085
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/doctor-71.png",
+         "id" : "39886c6bc5908748d6ec95e8636fe6947e508cd0",
+         "name" : "Bệnh viện K",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 435,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/111559710388541602528/photos\"\u003eTùng Nguyễn Thanh\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAARXcjpwlB0m9cPbM3zKaUCR6oDVll1M26a1xarC2XGjNuVHc6AOWUaGOyIZ1IKPa6F7KawLxQ7S5la5lde8fQz2cbD5CmCnvBPAZM2-z6JuBJ7Kpb7vr4kJpLlDZwM0YOEhAdR3YOk74D6s_TuRdDs2UPGhR7nwV117SGifKR1Uz7pM9zl7JcXw",
+               "width" : 608
+            }
+         ],
+         "place_id" : "ChIJiYPYg5arNTERwbaXfU2ZzhE",
+         "plus_code" : {
+            "compound_code" : "2RGW+QC Hàng Bông, Hoàn Kiếm, Hà Nội, Việt Nam",
+            "global_code" : "7PH72RGW+QC"
+         },
+         "rating" : 3.6,
+         "reference" : "ChIJiYPYg5arNTERwbaXfU2ZzhE",
+         "scope" : "GOOGLE",
+         "types" : [ "hospital", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 346,
+         "vicinity" : "43 Quán Sứ, Hàng Bông"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 21.0248937,
+               "lng" : 105.788477
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 21.0262818802915,
+                  "lng" : 105.7899028302915
+               },
+               "southwest" : {
+                  "lat" : 21.0235839197085,
+                  "lng" : 105.7872048697085
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/doctor-71.png",
+         "id" : "b7761cb6b582936be87be28d08a03819e7c53d4f",
+         "name" : "Viện Huyết Học - Truyền Máu Trung ương",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 506,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/114933082933980101375/photos\"\u003eHảo Hoàng\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAA43xlpE1RSlS9PQcsu10s3qWGz9hVLfZ1jZ8M5mBgz7jEtJ7m9ynACwfmhNs35W3SFQFnUYJdXLH2zfEcgdmiZB8OgS31_vzYgrUIjtUZwI1fWCnR045ewUoF0qlJKUoaEhB1WmlEOMcKvH-qCVAgRESrGhS70ubNIpodQZ24EGQ8vlx9B5aV2w",
+               "width" : 900
+            }
+         ],
+         "place_id" : "ChIJgyIFhEmrNTERBytUg5miXUA",
+         "plus_code" : {
+            "compound_code" : "2QFQ+X9 Yên Hoà, Cầu Giấy, Hà Nội, Việt Nam",
+            "global_code" : "7PH72QFQ+X9"
+         },
+         "rating" : 4.3,
+         "reference" : "ChIJgyIFhEmrNTERBytUg5miXUA",
+         "scope" : "GOOGLE",
+         "types" : [ "hospital", "health", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 610,
+         "vicinity" : "Phạm Văn Bạch, Yên Hoà"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 21.0281344,
+               "lng" : 105.8385864
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 21.0295733802915,
+                  "lng" : 105.8400064302915
+               },
+               "southwest" : {
+                  "lat" : 21.0268754197085,
+                  "lng" : 105.8373084697085
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/doctor-71.png",
+         "id" : "4aaf21ee10c8288dad1c00af7b07e445dd7af894",
+         "name" : "Bệnh Viện Da Liễu Hà Nội",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "photos" : [
+            {
+               "height" : 1201,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/103121986744735494506/photos\"\u003eBệnh Viện Da Liễu Hà Nội\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAAYxWkPtt_M2PyI2b8RfhICFAgfpMa9VVfKjoBEgLl_yyLi0rgpttDGRzU7a5LMWHo4o5PtS01Pr57Agnyue6jg9B_od3-rwc4VTRp2keerrvIXUNU3Rbrnj2S9DWfwpfrEhCPw3B2RpyLGpHT9rYNfXpCGhQA6ssyvyOstk6QKT4llqOhmJjS7Q",
+               "width" : 1243
+            }
+         ],
+         "place_id" : "ChIJ_S1ZrpmrNTERw-p2FxX66ws",
+         "plus_code" : {
+            "compound_code" : "2RHQ+7C Văn Miếu, Đống Đa, Hà Nội, Việt Nam",
+            "global_code" : "7PH72RHQ+7C"
+         },
+         "rating" : 4,
+         "reference" : "ChIJ_S1ZrpmrNTERw-p2FxX66ws",
+         "scope" : "GOOGLE",
+         "types" : [ "hospital", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 264,
+         "vicinity" : "79B Phố Nguyễn Khuyến, Văn Miếu"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 21.0313723,
+               "lng" : 105.8351703
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 21.0325583802915,
+                  "lng" : 105.8370312
+               },
+               "southwest" : {
+                  "lat" : 21.0298604197085,
+                  "lng" : 105.8337068
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/doctor-71.png",
+         "id" : "d35c7bd32889df84b1691d2e55ddeb5878869d93",
+         "name" : "Bệnh viện Đa khoa Xanh Pôn",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "photos" : [
+            {
+               "height" : 3096,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/118186201574545989326/photos\"\u003eNguyễn Mạnh Cầm\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAAqjOvjEcRwm4BXqf9eWdqaSJ2ikZGlPJNBalVxAcr8vNKkSurjQAvr7zXzcgHYoqy71-vI_JaWhclaLeSrhg3ZgTtvVN7K_S9mFpN7Akz3GsJTTJCOyEogWkpcY5lQ-1GEhBi5VmsvaexxLC1YhUC5KvoGhQfncUpGsXeps34JJiIJQW7yuVHTw",
+               "width" : 4128
+            }
+         ],
+         "place_id" : "ChIJuQlSspirNTERIkZKe_SKNBo",
+         "plus_code" : {
+            "compound_code" : "2RJP+G3 Hà Nội, Hoàn Kiếm, Hà Nội, Việt Nam",
+            "global_code" : "7PH72RJP+G3"
+         },
+         "rating" : 4.2,
+         "reference" : "ChIJuQlSspirNTERIkZKe_SKNBo",
+         "scope" : "GOOGLE",
+         "types" : [ "hospital", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 396,
+         "vicinity" : "12 Chu Văn An, Điện Bàn"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 21.0037997,
+               "lng" : 105.8387336
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 21.0052968302915,
+                  "lng" : 105.8400722302915
+               },
+               "southwest" : {
+                  "lat" : 21.0025988697085,
+                  "lng" : 105.8373742697085
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/doctor-71.png",
+         "id" : "79fbbeac95db5f53ad12151e5cb3e85fd3dd3357",
+         "name" : "Bệnh Viện Da Liễu Trung Ương",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 427,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/106078288625585062572/photos\"\u003educ ngo\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAA1ENXcIc-xq7qTBKVrtT3HBdJH4fb6E6FMVpXL3cwjTv2MMXajz-mfmd0-GKKs_IBlEm7tI8r-F1S2C5gIlLi46ecCXdabhzuBmlM9_rgZkFred4Eg4PRs8PSWmfg6U3mEhDchTSS6bhfP98zX07af2CYGhRFvlBTxYqfdIU5XRAEE75INFm2Wg",
+               "width" : 640
+            }
+         ],
+         "place_id" : "ChIJUU_ZkXmsNTERGLSQ1Mq6fBg",
+         "plus_code" : {
+            "compound_code" : "2R3Q+GF Hà Nội, Hoàn Kiếm, Hà Nội, Việt Nam",
+            "global_code" : "7PH72R3Q+GF"
+         },
+         "rating" : 4,
+         "reference" : "ChIJUU_ZkXmsNTERGLSQ1Mq6fBg",
+         "scope" : "GOOGLE",
+         "types" : [ "hospital", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 454,
+         "vicinity" : "15A Phương Mai"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 21.0503014,
+               "lng" : 105.7885777
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 21.0518259802915,
+                  "lng" : 105.7905492302915
+               },
+               "southwest" : {
+                  "lat" : 21.0491280197085,
+                  "lng" : 105.7878512697085
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/doctor-71.png",
+         "id" : "a0a935a044cf9a5480be11c04c51c2e5cce2e24e",
+         "name" : "Bệnh viện E",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 1936,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/110191559910365944806/photos\"\u003eDân Ngô\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAAqasoTYiPkPISEwjxwLWGcH7FaObFwV1s5kgYw6SrJ_hKJDgKls3C1oizPwlcY_UzQiso_dzoPLX961PXEWjliOyzAfJQzbOpEhVqJ1U3IQqbJgTuq4OjbstTyuXMEZ5EEhD-TcQL2_Wfvui-_ksS1jC-GhRuALRJK2xUuMCuxG2j54Dj2uWG2w",
+               "width" : 2592
+            }
+         ],
+         "place_id" : "ChIJSZVZ8S6rNTERos-ogweQC7s",
+         "plus_code" : {
+            "compound_code" : "3Q2Q+4C Nghĩa Tân, Cầu Giấy, Hà Nội, Việt Nam",
+            "global_code" : "7PH73Q2Q+4C"
+         },
+         "rating" : 3.8,
+         "reference" : "ChIJSZVZ8S6rNTERos-ogweQC7s",
+         "scope" : "GOOGLE",
+         "types" : [ "hospital", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 318,
+         "vicinity" : "89 Trần Cung"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 21.0037599,
+               "lng" : 105.8404276
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 21.0053430302915,
+                  "lng" : 105.8416102302915
+               },
+               "southwest" : {
+                  "lat" : 21.0026450697085,
+                  "lng" : 105.8389122697085
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/doctor-71.png",
+         "id" : "3ea80ba85d04390c09cc490ac07aff4010453b08",
+         "name" : "Bệnh Viện Việt Pháp Hà Nội",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 300,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/100439644511731456905/photos\"\u003eHòa Nguyễn Ngọc\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAAqgwaPGJy9yZpd9bsukvHEgcW1GDy7pRRXoApUHREhePj1-h1-9RB-otsf1dHfJac87IXOIjj2dbT5fs__M8TxNMaTAWV-vg-ZjVs9jVr357ZiKPqtaRKwxHUkwl0I46NEhCadMD2swXsVqv6G8SwyI5wGhSLK4ox2Z9T2FxJ9VjnjNGHmdpRwQ",
+               "width" : 500
+            }
+         ],
+         "place_id" : "ChIJ0eR74XmsNTERtumOeSyIXcE",
+         "plus_code" : {
+            "compound_code" : "2R3R+G5 Phương Mai, Đống Đa, Hà Nội, Việt Nam",
+            "global_code" : "7PH72R3R+G5"
+         },
+         "rating" : 3.9,
+         "reference" : "ChIJ0eR74XmsNTERtumOeSyIXcE",
+         "scope" : "GOOGLE",
+         "types" : [ "hospital", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 358,
+         "vicinity" : "1 Phương Mai"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 20.9996578,
+               "lng" : 105.8406131
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 21.0007676302915,
+                  "lng" : 105.8422419802915
+               },
+               "southwest" : {
+                  "lat" : 20.9980696697085,
+                  "lng" : 105.8395440197085
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/doctor-71.png",
+         "id" : "56e694dea794eb43f1e3f4e6425334c7256b5f19",
+         "name" : "Bệnh viện Tai Mũi Họng Trung ương",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "photos" : [
+            {
+               "height" : 483,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/104330462829960281890/photos\"\u003eDao Hung Cuong\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAAh-qK5qooxJAJieuD84nNL7PnjT4MAOd58tyJt0K3V2hl6ynIGH-u_qZl6CoFPEaDBxtbi5jqjacAYjgCIf8Ez-zNz_04U2zKdJus7GXTjlnimyRMrqzOdMLvjV4Ia2FYEhCJVLe_lpsgPJWvNoW_jEAjGhQZ6orpXy8TJl54uAtm_djg5vegfA",
+               "width" : 772
+            }
+         ],
+         "place_id" : "ChIJM8ZIZnesNTER6arrqD68DeY",
+         "plus_code" : {
+            "compound_code" : "XRXR+V6 Phương Đình, Đống Đa, Hà Nội, Việt Nam",
+            "global_code" : "7PG7XRXR+V6"
+         },
+         "rating" : 3.8,
+         "reference" : "ChIJM8ZIZnesNTER6arrqD68DeY",
+         "scope" : "GOOGLE",
+         "types" : [ "hospital", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 365,
+         "vicinity" : "78 Giải Phóng, Phương Đình"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 21.0160919,
+               "lng" : 105.8486029
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 21.0174238302915,
+                  "lng" : 105.8498449802915
+               },
+               "southwest" : {
+                  "lat" : 21.0147258697085,
+                  "lng" : 105.8471470197085
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/doctor-71.png",
+         "id" : "ba8555e6926286553550184a713dd42866395592",
+         "name" : "Bệnh viện Y Học Cổ Truyền Trung Ương",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "photos" : [
+            {
+               "height" : 399,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/115035919506310810996/photos\"\u003eThe God Wota\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAAcxtuUnhwlqtVsMrW0YCu8eaZroUXMhVpquUCoYWYK37BeR-C6rbiC8cymKLLMlh_8HJclbjXilgQdMb3TbuevP14o_nGdzm_G-CsnLQ0tOw78WOH9VkapqusjBCymemaEhAjKsR-lRFXFwlMvs60-Q5WGhTsVm1QUg2Nvg5uyd2TjcxTwPU-CQ",
+               "width" : 600
+            }
+         ],
+         "place_id" : "ChIJIZ1LSoyrNTERlmFBrs_r4Ls",
+         "plus_code" : {
+            "compound_code" : "2R8X+CC Hà Nội, Hoàn Kiếm, Hà Nội, Việt Nam",
+            "global_code" : "7PH72R8X+CC"
+         },
+         "rating" : 3.9,
+         "reference" : "ChIJIZ1LSoyrNTERlmFBrs_r4Ls",
+         "scope" : "GOOGLE",
+         "types" : [ "hospital", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 173,
+         "vicinity" : "29 Nguyễn Bỉnh Khiêm, Nguyễn Du"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 21.0009521,
+               "lng" : 105.8406854
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 21.006704,
+                  "lng" : 105.8419506
+               },
+               "southwest" : {
+                  "lat" : 20.9967392,
+                  "lng" : 105.8389718
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/doctor-71.png",
+         "id" : "2f3c14cd052eff47fe27ee839042f2c56ad89949",
+         "name" : "Bệnh Viện Bạch Mai",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 488,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/116660062070807229162/photos\"\u003eOppai is my Life\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAAJ9Hqajtpu_hPpgQgq7NvmK6rk3KbJzITIra4KijcxbcsRCfXqPOYDsO6VqA5PFuluN9E3bfOi_RfQIfhdXDU2ez0gepxV5D5Nae5gr0wmxUKUVvOnMdPM-CCp6M-9tYKEhDu4IqJM9C7BIuBzk56STIhGhRtBKQlJJHUprivTOH5Tna_k1s6Cg",
+               "width" : 650
+            }
+         ],
+         "place_id" : "ChIJD5zHdnqsNTERVKluUtQ-faM",
+         "plus_code" : {
+            "compound_code" : "2R2R+97 Phương Đình, Đống Đa, Hà Nội, Việt Nam",
+            "global_code" : "7PH72R2R+97"
+         },
+         "rating" : 3.9,
+         "reference" : "ChIJD5zHdnqsNTERVKluUtQ-faM",
+         "scope" : "GOOGLE",
+         "types" : [ "hospital", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 1087,
+         "vicinity" : "78 Đường Giải Phóng, Phương Đình"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 21.0236495,
+               "lng" : 105.8438542
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 21.0249070302915,
+                  "lng" : 105.8451690802915
+               },
+               "southwest" : {
+                  "lat" : 21.0222090697085,
+                  "lng" : 105.8424711197085
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/doctor-71.png",
+         "id" : "538c0905fb9be82905734467d4485cee9c88d5f5",
+         "name" : "Bệnh viện Tim Hà Nội",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 825,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/115035919506310810996/photos\"\u003eThe God Wota\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAAet42-l4Z_5aGkmcmlKJKDElzH2e3NSA3NiBPUCHJlvRoU98I15Q6iLjjnDWGeIkYcsQVgTqEhEMijAFOHnd7OyGtgOwfnOmnXlFMDMeEixzONLbM-FH9rSkbjqAtkEjREhD-eOpLMwMjbtjMXH8tqO_pGhQeL9RxYj92dat5FFqBsnDVuh10vQ",
+               "width" : 1027
+            }
+         ],
+         "place_id" : "ChIJKVB4HpGrNTERsU3_Nik_5JA",
+         "plus_code" : {
+            "compound_code" : "2RFV+FG Hà Nội, Hoàn Kiếm, Hà Nội, Việt Nam",
+            "global_code" : "7PH72RFV+FG"
+         },
+         "rating" : 4.2,
+         "reference" : "ChIJKVB4HpGrNTERsU3_Nik_5JA",
+         "scope" : "GOOGLE",
+         "types" : [ "hospital", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 203,
+         "vicinity" : "92 Trần Hưng Đạo, Cửa Nam"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 21.0023202,
+               "lng" : 105.8301934
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 21.0036792302915,
+                  "lng" : 105.8313107802915
+               },
+               "southwest" : {
+                  "lat" : 21.0009812697085,
+                  "lng" : 105.8286128197085
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/doctor-71.png",
+         "id" : "46e883f3f392447223bffc15068e6de11591c6d0",
+         "name" : "Bệnh viện Đại học Y Hà Nội",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 1365,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/117282899722614924061/photos\"\u003eAnh Quan\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAAZTf9Cy3GOJOxqzH8NvvJKy5Dm4ONUqlO4r-9qa7xUhgL71mAruAlbEtIQJSwNabVMKO7xCpTJH_5EwNJINoNfTpMEjk3HngR02FQKqP-W9cvIP0qDX7v8IUVftrvGeL0EhBqhtCte9dGkd7ZfYJZTOmOGhQi1ABpuEd6A10liUw5miHtXnoPOg",
+               "width" : 2048
+            }
+         ],
+         "place_id" : "ChIJJ7i6xX2sNTERKFjcoYDYdsA",
+         "plus_code" : {
+            "compound_code" : "2R2J+W3 Kim Liên, Đống Đa, Hà Nội, Việt Nam",
+            "global_code" : "7PH72R2J+W3"
+         },
+         "rating" : 4.3,
+         "reference" : "ChIJJ7i6xX2sNTERKFjcoYDYdsA",
+         "scope" : "GOOGLE",
+         "types" : [ "hospital", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 545,
+         "vicinity" : "1 Tôn Thất Tùng, Kim Liên"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 21.0245272,
+               "lng" : 105.8501118
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 21.0261485802915,
+                  "lng" : 105.8516121802915
+               },
+               "southwest" : {
+                  "lat" : 21.0234506197085,
+                  "lng" : 105.8489142197085
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/doctor-71.png",
+         "id" : "9602376cae80bd20157921215522c6a002b9c034",
+         "name" : "Bệnh viện Việt Nam Cuba",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 389,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/104361522721303039074/photos\"\u003eTran Duy Hoang\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAAD3sVK37ImutM80CKZ3RcWTfoB53wdY79P0QqdWiDHfcAtNLx8P3Z-qcA1mnJfHgxCsK1RMeBhHV8_JoCfqXE9-DW9YFqPQ03g3QyKdRaeH18an7xaVWyy9SvuBuoHZ3kEhBZ-ldfQGazhijybRyOeHYBGhR1i7xvjfVHbeLwDr-paKE1TAugcg",
+               "width" : 518
+            }
+         ],
+         "place_id" : "ChIJ7Raoe5OrNTERWsJTMbaiwx0",
+         "plus_code" : {
+            "compound_code" : "2VF2+R2 Hà Nội, Hoàn Kiếm, Hà Nội, Việt Nam",
+            "global_code" : "7PH72VF2+R2"
+         },
+         "rating" : 4,
+         "reference" : "ChIJ7Raoe5OrNTERWsJTMbaiwx0",
+         "scope" : "GOOGLE",
+         "types" : [ "hospital", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 198,
+         "vicinity" : "37 Hai Bà Trưng, Tràng Tiền"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 21.0182458,
+               "lng" : 105.8556317
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 21.0197063802915,
+                  "lng" : 105.8569559802915
+               },
+               "southwest" : {
+                  "lat" : 21.01700841970849,
+                  "lng" : 105.8542580197085
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/doctor-71.png",
+         "id" : "094a9832aa77ee628905f67888b96344b94aacdd",
+         "name" : "Bệnh Viện Đa Khoa Hà Nội",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 600,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/113411977043245568935/photos\"\u003eLoan Huong\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAARgTvu6B4f5fbbTymrTMAof1UDBNBHflR-6wLJHFAM3YKoEc_Cjj66JLrwa0mV3V4VapioG6312Bdx8d6FVTAzvorUjhv-G8tUEZzvanwb5qiydw945gN5yIsi8qzZ1diEhDd93ewT78aj7NnMURwXnnDGhQ_RRFlvoGBqiyfxa3ih5aobddNjg",
+               "width" : 800
+            }
+         ],
+         "place_id" : "ChIJg_HDePKrNTERbCtSPpjTz0Y",
+         "plus_code" : {
+            "compound_code" : "2V94+77 Phạm Đình Hổ, Hai Bà Trưng, Hà Nội, Việt Nam",
+            "global_code" : "7PH72V94+77"
+         },
+         "rating" : 4.2,
+         "reference" : "ChIJg_HDePKrNTERbCtSPpjTz0Y",
+         "scope" : "GOOGLE",
+         "types" : [ "hospital", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 56,
+         "vicinity" : "29 Hàn Thuyên, Phạm Đình Hổ"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 21.012469,
+               "lng" : 105.858579
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 21.0138179302915,
+                  "lng" : 105.8599280302915
+               },
+               "southwest" : {
+                  "lat" : 21.0111199697085,
+                  "lng" : 105.8572300697085
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/doctor-71.png",
+         "id" : "b3ab69d4c3232bc63b942abdee348ef746a2a6b0",
+         "name" : "Phòng tiêm chủng, Xét nghiệm - 131 Lò Đúc, Hà Nội",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "photos" : [
+            {
+               "height" : 1365,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/106404787928877479379/photos\"\u003ePhòng tiêm chủng, Xét nghiệm - 131 Lò Đúc, Hà Nội\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAA6F9saFxEfLxzzaO3zytCcZtLtV-4kj9fjv0c_2vjGsDfOlgE9lLa2XmMdSz9m_fdIiyKiAEjBDaUYXWc6bvvbgvUxIUn9Uj5HM0p3pfU8MqWuK3F6ikSx_R0IeLCzMprEhBWsxFkV5Z16irYa5W2gj_9GhS7xXNcGPzwZRu76GYHj72_mtpHcQ",
+               "width" : 2048
+            }
+         ],
+         "place_id" : "ChIJdZ08VfGrNTERBqKIavn3mj4",
+         "plus_code" : {
+            "compound_code" : "2V65+XC Hà Nội, Hoàn Kiếm, Hà Nội, Việt Nam",
+            "global_code" : "7PH72V65+XC"
+         },
+         "rating" : 4.2,
+         "reference" : "ChIJdZ08VfGrNTERBqKIavn3mj4",
+         "scope" : "GOOGLE",
+         "types" : [ "doctor", "health", "hospital", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 33,
+         "vicinity" : "131 Lò Đúc, Quận Hai Bà Trưng"
+      }
+   ],
+   "status" : "OK"
+}

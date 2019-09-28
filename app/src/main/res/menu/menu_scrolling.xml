@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="hu.ait.hospitalhealth.ScrollingActivity">
+
+    <item
+            android:id="@+id/category_home"
+            android:icon="@drawable/ic_action_home"
+            android:title="HOME"
+            app:showAsAction="always"
+    />
+
+    <item
+            android:id="@+id/category_purchased"
+            android:icon="@drawable/ic_check_box"
+            android:title="PURCHASED"
+            app:showAsAction="always"
+    />
+
+    <item
+            android:id="@+id/category_not_purchased"
+            android:icon="@drawable/ic_check_box_outline_blank"
+            android:title="NOT PURCHASED"
+            app:showAsAction="always"
+    />
+
+</menu>

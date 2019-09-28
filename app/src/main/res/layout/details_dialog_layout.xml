@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+            android:text="@string/dialog_name_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvNameReminder" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="24dp"
+            android:textSize="30sp" android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/mapViewDetails"/>
+
+    <TextView
+            android:text="@string/dialog_datetime_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDateTimeDialog" android:textSize="18sp"
+            android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/tvNameReminder"
+            android:layout_marginStart="24dp" app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+            android:text="@string/dialog_details_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDetailsDialog"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/tvLocationDialog"
+    />
+
+    <fragment
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/mapViewDetails"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="24dp"/>
+
+    <TextView
+            android:text="@string/dialog_location_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvLocationDialog" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvDateTimeDialog" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="24dp" android:textSize="18sp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
