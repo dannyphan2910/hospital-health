@@ -61,23 +61,6 @@ class NearbyPlacesActivity : AppCompatActivity(), OnMapReadyCallback {
 
         addMarkers()
     }
-//
-//    fun getCurrentLocation(location: android.location.Location) {
-//        this.currentLocation = location
-//
-//        positionCamera()
-//    }
-//
-//    fun positionCamera() {
-//        val cameraPosition = CameraPosition.Builder()
-//            .target(LatLng(currentLocation.latitude, currentLocation.longitude))
-//            .zoom(15f)
-//            .tilt(30f)
-//            .bearing(45f)
-//            .build()
-//
-//        mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition))
-//    }
 
     fun addMarkers() {
         var allHospitalData = DataHospital(resources.openRawResource(R.raw.datajsonbudapest)).dataHospitals
