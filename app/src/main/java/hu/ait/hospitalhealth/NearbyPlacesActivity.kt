@@ -20,17 +20,36 @@ import hu.ait.hospitalhealth.data.DataHospital
 import hu.ait.hospitalhealth.location.MyLocationManager
 import android.view.WindowManager
 import android.os.Build
+import android.view.View
+import android.widget.Button
+import android.widget.TextView
+import com.google.android.gms.location.FusedLocationProviderClient
+import com.google.android.gms.location.LocationServices
+import com.google.android.gms.location.places.Places
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.model.CameraPosition
 import com.google.android.gms.maps.model.LatLng
+import com.google.android.gms.tasks.OnCompleteListener
+import com.google.android.gms.tasks.Task
+import hu.ait.hospitalhealth.data.Base
 import hu.ait.hospitalhealth.data.HospitalDataPoint
-import hu.ait.hospitalhealth.data.Location
+import hu.ait.hospitalhealth.network.MapsAPI
+import kotlinx.android.synthetic.main.activity_nearby_places.*
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
 
 class NearbyPlacesActivity : AppCompatActivity(), OnMapReadyCallback {
 
     private lateinit var mMap: GoogleMap
     private lateinit var myLocationManager: MyLocationManager
-    private lateinit var currentLocation: android.location.Location
+    private var currentLocation: android.location.Location? = null
+    private lateinit var mFusedLocationProviderClient: FusedLocationProviderClient
+    private lateinit var mapsAPI: MapsAPI
+
+    val BASE_URL = "https://api.foursquare.com/v2/"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,6 +60,28 @@ class NearbyPlacesActivity : AppCompatActivity(), OnMapReadyCallback {
         mapFragment.getMapAsync(this)
 
         myLocationManager = MyLocationManager(this)
+
+        // Construct a FusedLocationProviderClient.
+        mFusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
+
+        if (intent.hasExtra(AddReminderActivity.GET_LOCATION)) {
+            btnCancel.visibility = View.VISIBLE
+            tvPickerMode.visibility = View.VISIBLE
+        } else {
+            btnCancel.visibility = View.INVISIBLE
+            tvPickerMode.visibility = View.INVISIBLE
+        }
+
+        btnCancel.setOnClickListener {
+            finish()
+        }
+
+        // retrofit for MapsAPI
+        var retrofit = Retrofit.Builder()
+            .baseUrl(BASE_URL)
+            .addConverterFactory(GsonConverterFactory.create())
+            .build()
+        mapsAPI = retrofit.create(MapsAPI::class.java)
     }
 
     /**
@@ -59,34 +100,57 @@ class NearbyPlacesActivity : AppCompatActivity(), OnMapReadyCallback {
 
         requestNeededPermission()
 
+        getCurrentLocation()
+    }
+
+    fun getCurrentLocation() {
+        try {
+            if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
+                var locationResult = mFusedLocationProviderClient.lastLocation
+                locationResult.addOnCompleteListener {
+                    if (it.isSuccessful) {
+                        // Set the map's camera position to the current location of the device.
+                        currentLocation = it.result
+                        positionCamera()
+                    }
+
+                }
+            }
+        } catch(e: SecurityException)  {
+            Log.e("Exception: %s", e.message)
+        }
+    }
+
+    private fun positionCamera() {
+        val cameraPosition = CameraPosition.Builder()
+            .target(LatLng(currentLocation!!.latitude, currentLocation!!.longitude))
+            .zoom(10f)
+            .tilt(30f)
+            .bearing(45f)
+            .build()
+
+        mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition))
+
         addMarkers()
     }
-//
-//    fun getCurrentLocation(location: android.location.Location) {
-//        this.currentLocation = location
-//
-//        positionCamera()
-//    }
-//
-//    fun positionCamera() {
-//        val cameraPosition = CameraPosition.Builder()
-//            .target(LatLng(currentLocation.latitude, currentLocation.longitude))
-//            .zoom(15f)
-//            .tilt(30f)
-//            .bearing(45f)
-//            .build()
-//
-//        mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition))
-//    }
 
     fun addMarkers() {
-        var allHospitalData = DataHospital(resources.openRawResource(R.raw.datajsonbudapest)).dataHospitals
-        allHospitalData.addAll(DataHospital(resources.openRawResource(R.raw.datajsonhanoi)).dataHospitals)
-        allHospitalData.addAll(DataHospital(resources.openRawResource(R.raw.datajsonbrandeis)).dataHospitals)
+        var latlng = currentLocation!!.latitude.toString() + "," + currentLocation!!.longitude.toString()
+        val call = mapsAPI.getHospitalDetails(latlng)
 
-        addMarkerToMap(allHospitalData)
+        call.enqueue(object : Callback<Base> {
+            override fun onResponse(call: Call<Base>, response: Response<Base>) {
+                var mapsResponse = response.body()?.response!!.venues
+                var allHospitalData = DataHospital(mapsResponse).dataHospitals
 
-        setMarkerListener()
+                addMarkerToMap(allHospitalData)
+
+                setMarkerListener()
+            }
+            override fun onFailure(call: Call<Base>, t: Throwable) {
+                Toast.makeText(this@NearbyPlacesActivity, t.message, Toast.LENGTH_LONG).show()
+            }
+        })
     }
 
     private fun addMarkerToMap(allHospitalData: MutableList<HospitalDataPoint>) {
@@ -97,9 +161,9 @@ class NearbyPlacesActivity : AppCompatActivity(), OnMapReadyCallback {
                     .title(result.name)
                     .snippet(
                         getString(
-                            R.string.map_marker_rating,
-                            result.ratingInfo.rating,
-                            result.ratingInfo.user_rating
+                            R.string.map_marker_info,
+                            result.info.address,
+                            result.info.distance
                         )
                     )
             )
@@ -117,6 +181,7 @@ class NearbyPlacesActivity : AppCompatActivity(), OnMapReadyCallback {
 
                 Toast.makeText(this@NearbyPlacesActivity, getString(R.string.toast_location_saved), Toast.LENGTH_LONG)
                     .show()
+
                 return false
             }
         })

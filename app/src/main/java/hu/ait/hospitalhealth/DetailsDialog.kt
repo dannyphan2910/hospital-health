@@ -12,7 +12,7 @@ import com.google.android.gms.maps.*
 import com.google.android.gms.maps.model.CameraPosition
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
-import hu.ait.hospitalhealth.data.Location
+import hu.ait.hospitalhealth.data.AppointmentLocation
 import hu.ait.hospitalhealth.data.Reminder
 import kotlinx.android.synthetic.main.activity_nearby_places.*
 import kotlinx.android.synthetic.main.details_dialog_layout.view.*
@@ -28,7 +28,7 @@ class DetailsDialog : DialogFragment(), OnMapReadyCallback {
 
     lateinit var detailsHandler: DetailsHandler
     private lateinit var mMapDetails: GoogleMap
-    private var location: Location? = null
+    private var location: AppointmentLocation? = null
 
     override fun onAttach(context: Context?) {
         super.onAttach(context)

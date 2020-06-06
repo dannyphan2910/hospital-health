@@ -1,9 +1,16 @@
 package hu.ait.hospitalhealth.data
 
+import android.widget.Toast
 import com.google.android.gms.maps.model.LatLng
 import hu.ait.hospitalhealth.R
+import hu.ait.hospitalhealth.network.MapsAPI
 import org.json.JSONArray
 import org.json.JSONObject
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
 import java.io.DataInputStream
 import java.io.File
 import java.io.FileNotFoundException
@@ -14,52 +21,38 @@ import java.util.*
 data class HospitalDataPoint(
     var name: String,
     var location: LatLng,
-    var ratingInfo: Rating
+    var info: LocationInfo
 )
 
-data class Rating (
-    var rating : Double,
-    var user_rating : Int
+data class LocationInfo (
+    var address: String,
+    var distance: Int
 )
 
 class DataHospital {
     var dataHospitals = mutableListOf<HospitalDataPoint>()
 
-    constructor(inputStream: InputStream) {
-
-        var rawString = ""
-
-        try {
-            var fileScanner = Scanner(inputStream)
-            while (fileScanner.hasNextLine()) rawString += fileScanner.nextLine()
-
-            fileScanner.close()
-
-            var dataLoaded = JSONObject(rawString).getJSONArray("results")
-
-            addHospitalData(dataLoaded)
-        } catch (e : Exception) {
-            e.printStackTrace()
-        }
+    constructor(venues: List<Venues>) {
+        addHospitalData(venues)
     }
 
-    private fun addHospitalData(dataLoaded: JSONArray) {
-        for (i in 0..dataLoaded.length() - 1) {
-            var thisResult = dataLoaded.getJSONObject(i)
-
+    private fun addHospitalData(venues: List<Venues>) : Boolean {
+        venues.forEach {
             dataHospitals.add(
                 HospitalDataPoint(
-                    thisResult.getString("name"),
+                    it.name,
                     LatLng(
-                        thisResult.getJSONObject("geometry").getJSONObject("location").getDouble("lat"),
-                        thisResult.getJSONObject("geometry").getJSONObject("location").getDouble("lng")
+                        it.location.lat,
+                        it.location.lng
                     ),
-                    Rating(
-                        thisResult.getDouble("rating"),
-                        thisResult.getInt("user_ratings_total")
+                    LocationInfo(
+                        it.location.formattedAddress.joinToString(", "),
+                        it.location.distance
                     )
                 )
             )
         }
+
+        return dataHospitals.size > 0
     }
 }

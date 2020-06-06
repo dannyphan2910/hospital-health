@@ -39,10 +39,13 @@
     <string name="dialog_details">Details: %1$s</string>
     <string name="dialog_location">Location: %1$s</string>
     
-    <string name="map_marker_rating">Rating: %1$.1f (%2$d)</string>
+    <string name="map_marker_info">(%2$d m away) %1$s</string>
     <string name="label_coordinate">COORDINATE</string>
     <string name="location_permission_needed">Location permission is needed for this functionality</string>
     <string name="location_perm_granted">LOCATION permission granted</string>
     <string name="location_perm_not_granted">LOCATION permission NOT granted</string>
 
+    <string name="toast_category">%1$s was selected</string>
+    <string name="location_picker_mode">Location Picker Mode</string>
+    <string name="btn_cancel">Back</string>
 </resources>

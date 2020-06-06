@@ -18,4 +18,10 @@ interface ReminderDAO {
 
     @Query("DELETE FROM reminderlisttable")
     fun deleteAll()
+
+    @Query("SELECT * FROM reminderlisttable WHERE done = 0")
+    fun filterByNotDone() : List<Reminder>
+
+    @Query("SELECT * FROM reminderlisttable WHERE done = 1")
+    fun filterByDone() : List<Reminder>
 }

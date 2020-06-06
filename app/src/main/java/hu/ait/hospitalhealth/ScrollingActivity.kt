@@ -15,10 +15,7 @@ import android.view.WindowManager
 import android.widget.Toast
 import androidx.recyclerview.widget.DividerItemDecoration
 import hu.ait.hospitalhealth.adapter.ReminderAdapter
-import hu.ait.hospitalhealth.data.AppDatabase
-import hu.ait.hospitalhealth.data.Location
-import hu.ait.hospitalhealth.data.Reminder
-import hu.ait.hospitalhealth.data.Time
+import hu.ait.hospitalhealth.data.*
 import kotlinx.android.synthetic.main.activity_scrolling.*
 
 class ScrollingActivity : AppCompatActivity(), DetailsDialog.DetailsHandler {
@@ -87,7 +84,7 @@ class ScrollingActivity : AppCompatActivity(), DetailsDialog.DetailsHandler {
 
             var timeResult = getResultDateTime(bundleResult)
 
-            var locationResult: Location? = getResultLocation(bundleResult)
+            var locationResult = getResultLocation(bundleResult)
 
             var detailsResult = bundleResult?.getString(AddReminderActivity.DETAIL_RESULT, "")
             reminderAdapter.addItem(
@@ -104,15 +101,14 @@ class ScrollingActivity : AppCompatActivity(), DetailsDialog.DetailsHandler {
         }
     }
 
-    private fun getResultLocation(bundleResult: Bundle?): Location? {
+    private fun getResultLocation(bundleResult: Bundle?): AppointmentLocation? {
         var locationString = bundleResult?.getString(AddReminderActivity.LOCATION_RESULT, NONE)
-        var locationResult: Location? = null
+        var locationResult: AppointmentLocation? = null
 
         if (locationString != NONE) {
             var dataStringArr = locationString!!.split(",")
 
-            locationResult = Location(
-                null,
+            locationResult = AppointmentLocation(
                 dataStringArr.get(0),
                 dataStringArr.get(1).toDouble(),
                 dataStringArr.get(2).toDouble()
@@ -121,12 +117,11 @@ class ScrollingActivity : AppCompatActivity(), DetailsDialog.DetailsHandler {
         return locationResult
     }
 
-    private fun getResultDateTime(bundleResult: Bundle?): Time {
+    private fun getResultDateTime(bundleResult: Bundle?): AppointmentTime {
         var arrDate = bundleResult?.getIntegerArrayList(AddReminderActivity.DATE_RESULT)
         var arrTime = bundleResult?.getIntegerArrayList(AddReminderActivity.TIME_RESULT)
 
-        var timeResult = Time(
-            null,
+        var timeResult = AppointmentTime(
             arrDate!!.get(0),
             arrDate!!.get(1),
             arrDate!!.get(2),
@@ -138,12 +133,21 @@ class ScrollingActivity : AppCompatActivity(), DetailsDialog.DetailsHandler {
     }
 
     private fun initRecyclerView() {
-        reminderAdapter = ReminderAdapter(this)
-        recyclerItem.adapter = reminderAdapter
+        Thread {
 
-        // adds lines btw list items
-        var itemDivider = DividerItemDecoration(this, DividerItemDecoration.VERTICAL)
-        recyclerItem.addItemDecoration(itemDivider)
+            var items = AppDatabase.getInstance(this@ScrollingActivity).reminderDAO().getAllItems()
+
+            runOnUiThread {
+                reminderAdapter = ReminderAdapter(this, items)
+                recyclerItem.adapter = reminderAdapter
+
+                // adds lines btw list items
+                var itemDivider = DividerItemDecoration(this, DividerItemDecoration.VERTICAL)
+                recyclerItem.addItemDecoration(itemDivider)
+            }
+
+        }.start()
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -157,7 +161,40 @@ class ScrollingActivity : AppCompatActivity(), DetailsDialog.DetailsHandler {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
 
-        return super.onOptionsItemSelected(item)
+        when (item?.itemId) {
+            R.id.category_home -> {
+                filterMode(Category.CATEGORY_HOME)
+            }
+            R.id.category_not_done -> {
+                filterMode(Category.CATEGORY_NOT_DONE)
+            }
+            R.id.category_done -> {
+                filterMode(Category.CATEGORY_DONE)
+            }
+        }
+
+        return true
+    }
+
+    fun filterMode(byCategory: String) {
+        Thread {
+            var databaseDAO = AppDatabase.getInstance(this@ScrollingActivity).reminderDAO()
+            var data =
+                when (byCategory) {
+                    Category.CATEGORY_HOME -> databaseDAO.getAllItems().toMutableList()
+                    Category.CATEGORY_NOT_DONE -> databaseDAO.filterByNotDone().toMutableList()
+                    Category.CATEGORY_DONE -> databaseDAO.filterByDone().toMutableList()
+                    else -> databaseDAO.getAllItems().toMutableList()
+                }
+
+            runOnUiThread {
+                reminderAdapter.reminderList.clear()
+                reminderAdapter = ReminderAdapter(this, data)
+                recyclerItem.adapter = reminderAdapter
+                Toast.makeText(this, getString(R.string.toast_category, byCategory), Toast.LENGTH_LONG).show()
+            }
+
+        }.start()
     }
 
     var detailsIndex: Int = -1

@@ -17,8 +17,6 @@ import androidx.core.content.getSystemService
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
-import hu.ait.hospitalhealth.data.Location
-import hu.ait.hospitalhealth.data.Time
 import java.util.*
 import kotlin.collections.ArrayList
 
@@ -33,6 +31,8 @@ class AddReminderActivity : AppCompatActivity() {
         val TIME_RESULT = "TIME_RESULT"
         val DETAIL_RESULT = "DETAILS_RESULT"
         val LOCATION_RESULT = "LOCATION_RESULT"
+
+        val GET_LOCATION = "GET_LOCATION"
     }
 
     lateinit var resultBundle: Bundle
@@ -123,11 +123,16 @@ class AddReminderActivity : AppCompatActivity() {
         btnSetLocation.setOnClickListener {
             val clipboard = applicationContext.getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
 
-            if (clipboard.primaryClip.getItemAt(0).text.isEmpty()) {
+            if (clipboard.primaryClip == null || clipboard.primaryClip.getItemAt(0).text == null || clipboard.primaryClip.getItemAt(0).text.isEmpty() ||
+                clipboard.primaryClip.getItemAt(0).text.toString().split(",").size < 3) {
                 setLocationNotSuccessful()
             } else {
                 setLocationSuccessful(clipboard)
             }
+        }
+
+        btnSetLocation.setOnLongClickListener {
+            setLocationNotSuccessful()
         }
     }
 
@@ -140,19 +145,20 @@ class AddReminderActivity : AppCompatActivity() {
         resultBundle.putString(LOCATION_RESULT, dataString)
     }
 
-    private fun setLocationNotSuccessful() {
+    private fun setLocationNotSuccessful() : Boolean {
         Toast.makeText(
             this@AddReminderActivity,
             getString(R.string.toast_set_location_not_successful),
             Toast.LENGTH_LONG
         ).show()
 
-        startActivity(
-            Intent(
-                this@AddReminderActivity,
-                NearbyPlacesActivity::class.java
-            )
+        var mapIntent = Intent(
+            this@AddReminderActivity,
+            NearbyPlacesActivity::class.java
         )
+        mapIntent.putExtra(GET_LOCATION, "true")
+        startActivity(mapIntent)
+        return true
     }
 
     fun sendResult() {

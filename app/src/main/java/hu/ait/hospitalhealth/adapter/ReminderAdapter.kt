@@ -15,8 +15,10 @@ class ReminderAdapter : RecyclerView.Adapter<ReminderAdapter.ViewHolder> {
     var reminderList = mutableListOf<Reminder>()
 
     val context : Context
-    constructor(context: Context) : super() {
+    constructor(context: Context, reminders: List<Reminder>) : super() {
         this.context = context
+
+        reminderList.addAll(reminders)
     }
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
